@@ -12,44 +12,101 @@
     
 </head>
 <body >
-    <header>
-        <label for="" class="Logo">
-            <a href=""> <img src="./img/logo.jpg" alt=""></a>
-        </label>
-        <h1>"Don Little"</h1>
-        <nav>
-            <a href="index.html">INICIO</a>
-            <a href="ordena.html">ORDENA AQUI</a>
-            <a href="Promociones.html">PROMOCIONES</a>
-            <a href="locales.html">LOCALES</a>
-            <a href="contactos.html">CONTACTANOS</a>
-            <a href="cotizacion.html">COTIZACIÓN</a>
-            <a href="#" onclick="showModal();" class="user"><img src="img/user.png" alt=""></a>
-        </nav>
-        <dialog id="modal" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal();">&times;</span>
-                <h2>ESTAS A UN PASO DE DISFRUTAR EL MEJOR POLLO A LA LEÑA</h2>
-                <a href="registrar.html"><button class="RL">REGISTRATE AQUI</button></a>
-                <a href="login.html"><button class="RL">INICIA SESION</button></a>
-                <br><br>
-                <button class="RL" onclick="closeModal();">Cerrar</button>
-            </div>
-        </dialog>
-    </header>
-   <br><br><br><br><br>
+   <header class="header-principal">
+
+    <div class="header-superior">
+
+        <div class="marca">
+
+            <a href="index.html">
+                <img src="./img/logo.jpg" alt="Don Little">
+            </a>
+
+            <h1>Don Little</h1>
+
+        </div>
+
+        <div class="acciones-header">
+
+          
+<a href="cotizacion.html" class="carrito-header" aria-label="Carrito">
+    <svg xmlns="http://www.w3.org/2000/svg"
+         width="28"
+         height="28"
+         viewBox="0 0 24 24"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="2"
+         stroke-linecap="round"
+         stroke-linejoin="round">
+        <circle cx="9" cy="20" r="1"></circle>
+        <circle cx="20" cy="20" r="1"></circle>
+        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+    </svg>
+
+    <span id="contadorCarrito">0</span>
+</a>
 
 
 
-<div class="slider-frame">
-    <ul>
-        <li><img src="./img/slider1.jpg" alt=""></li>
-        <li><img src="./img/slider2.jpg" alt=""></li>
-        <li><img src="./img/slider3.jpg" alt=""></li>
-        
-    </ul>
-</div>
+            <a href="#" onclick="showModal();" class="usuario-header">
+                <img src="img/user.png" alt="Usuario">
+                <span>Ingresar</span>
+            </a>
 
+        </div>
+
+    </div>
+
+
+    <!-- MODAL DE USUARIO -->
+    <dialog id="modal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close" onclick="closeModal();">&times;</span>
+
+            <h2>
+                ESTAS A UN PASO DE DISFRUTAR EL MEJOR POLLO A LA LEÑA
+            </h2>
+
+            <a href="registrar.html">
+                <button class="RL">REGÍSTRATE AQUÍ</button>
+            </a>
+
+            <a href="login.html">
+                <button class="RL">INICIA SESIÓN</button>
+            </a>
+
+            <br><br>
+
+            <button class="RL" onclick="closeModal();">
+                Cerrar
+            </button>
+
+        </div>
+
+    </dialog>
+
+</header>
+
+
+
+
+<!-- MENÚ -->
+<nav class="menu-principal">
+
+    <a href="index.html">INICIO</a>
+
+    <a href="ordena.html">ORDENA AQUÍ</a>
+
+    <a href="Promociones.html">PROMOCIONES</a>
+
+    <a href="locales.html">LOCALES</a>
+
+    <a href="contactos.html">CONTÁCTANOS</a>
+
+</nav>
 <div class="contenido">
 
 <div class="reserform">
